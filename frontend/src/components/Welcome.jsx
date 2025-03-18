@@ -97,16 +97,17 @@ function Welcome() {
           </div>
         </header>
         {/* Static Image on the Left Side */}
-<img
+
+        <img
   src={guragePrison} // Replace with your actual image path
   alt="Prison"
-  className="absolute left-0 top-12 h-full w-1/3 object-cover shadow-md border-r-4 border-gray-600"
+  className="absolute left-0 top-12  w-1/3 object-cover shadow-md border-r-4 border-gray-600"
 />
-
 
 
         {/* Main Content */}
         <main className="flex-grow flex items-center justify-center text-center p-10 z-10 relative">
+
           {/* Left Side Image */}
           {sideImages[0] && (
             <img
@@ -167,11 +168,14 @@ function Welcome() {
               <div className="absolute w-2 h-12 bg-white top-10 left-[48%] origin-bottom rotate-[var(--hourDeg)]" style={{ "--hourDeg": `${hoursDeg}deg` }}></div>
               <div className="absolute w-1.5 h-16 bg-blue-400 top-6 left-[49%] origin-bottom rotate-[var(--minuteDeg)]" style={{ "--minuteDeg": `${minutesDeg}deg` }}></div>
               <div className="absolute w-1 h-16 bg-red-500 top-2 left-[50%] origin-bottom rotate-[var(--secondDeg)]" style={{ "--secondDeg": `${secondsDeg}deg` }}></div>
+       
             </div>
-            <p className="mt-2 text-xl text-gray-800">Analog Watch</p>
+  
           </div>
-
         </main>
+        <footer className="bg-teal-800 text-white text-center py-4 ">
+        <p className="text-sm">&copy; {new Date().getFullYear()} Wolkite Prison Management. All rights reserved.</p>
+      </footer>
       </div>
 
       <ToastContainer />
