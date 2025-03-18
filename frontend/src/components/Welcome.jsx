@@ -10,6 +10,7 @@ import "@fontsource/roboto";
 import backgroundImage from "../assets/gurageZone.png";
 import ethiopiaFlag from "../assets/centralEthiopiaFlag.png";
 import flagofEthiopia from "../assets/Flag-Ethiopia.png";
+import guragePrison from "../assets/guragePrison.jpg";
 
 function Welcome() {
   const [messages, setMessages] = useState([]);
@@ -95,6 +96,14 @@ function Welcome() {
             <Link to="/login" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Login</Link>
           </div>
         </header>
+        {/* Static Image on the Left Side */}
+<img
+  src={guragePrison} // Replace with your actual image path
+  alt="Prison"
+  className="absolute left-0 top-12 h-full w-1/3 object-cover shadow-md border-r-4 border-gray-600"
+/>
+
+
 
         {/* Main Content */}
         <main className="flex-grow flex items-center justify-center text-center p-10 z-10 relative">
@@ -109,12 +118,12 @@ function Welcome() {
 
           {/* Message Box */}
           <motion.div
-            className="bg-white bg-opacity-80 p-12 rounded-lg shadow-2xl max-w-2xl w-full mx-6"
+            className="bg-white bg-opacity-10 p-12 rounded-lg shadow-2xl max-w-2xl w-full mx-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-5xl font-bold mb-6 font-[Roboto] text-gray-800">
+            <h1 className="text-5xl font-bold mb-6 font-[Roboto] text-white">
               Welcome to Gurage PMS
             </h1>
 
@@ -157,7 +166,7 @@ function Welcome() {
               {/* Watch Hands */}
               <div className="absolute w-2 h-12 bg-white top-10 left-[48%] origin-bottom rotate-[var(--hourDeg)]" style={{ "--hourDeg": `${hoursDeg}deg` }}></div>
               <div className="absolute w-1.5 h-16 bg-blue-400 top-6 left-[49%] origin-bottom rotate-[var(--minuteDeg)]" style={{ "--minuteDeg": `${minutesDeg}deg` }}></div>
-              <div className="absolute w-1 h-20 bg-red-500 top-2 left-[50%] origin-bottom rotate-[var(--secondDeg)]" style={{ "--secondDeg": `${secondsDeg}deg` }}></div>
+              <div className="absolute w-1 h-16 bg-red-500 top-2 left-[50%] origin-bottom rotate-[var(--secondDeg)]" style={{ "--secondDeg": `${secondsDeg}deg` }}></div>
             </div>
             <p className="mt-2 text-xl text-gray-800">Analog Watch</p>
           </div>
