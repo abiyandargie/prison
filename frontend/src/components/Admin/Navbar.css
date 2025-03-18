@@ -1,0 +1,145 @@
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #008080;
+    padding: 0 20px;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+  }
+  
+  .navbar-welcome {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Bell Icon */
+  .navbar-icon-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar-icon {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .navbar-icon:hover {
+    color: #ffcc00;
+  }
+  
+  .navbar-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 50%;
+  }
+  
+  /* Profile */
+  .navbar-profile {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar-profile-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .navbar-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  .navbar-initials {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 220px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 100;
+  }
+  
+  .profile-menu {
+    top: 50px;
+  }
+  
+  .notice-menu {
+    right: 0;
+  }
+  
+  .dropdown-header {
+    padding: 10px;
+    font-weight: bold;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-size: 14px;
+  }
+  
+  .dropdown-item:hover {
+    background: #f0f0f0;
+    color: #008080;
+  }
+  
+  .unread {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .no-notices {
+    color: gray;
+    text-align: center;
+  }
+  
+  .logout {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .dropdown-divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 5px 10px;
+  }
+  
+  

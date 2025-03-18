@@ -1,0 +1,47 @@
+.update-profile {
+    margin-top: 6rem;
+    position: relative;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .btn-save {
+    width: 100%;
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .btn-save:hover {
+    background-color: darkcyan;
+  }
+  
+  /* Back Button */
+  .back-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: teal;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .back-button:hover {
+    color: darkcyan;
+  }
+  
